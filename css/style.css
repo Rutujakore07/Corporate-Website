@@ -1,5 +1,5 @@
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   color: #000000;
   background-color: #ffffff;
 }
@@ -82,40 +82,19 @@ body {
 
 .sub_page .who_section.layout_padding {
   padding-top: 0;
+  
+}
+
+.who_section{
+  margin: 100px 0px;
 }
 
 .hero_area.sub_pages {
   height: auto;
 }
 
-.header_section .container-fluid {
-  padding-right: 25px;
-  padding-left: 25px;
-}
 
-.header_section .nav_container {
-  margin: 0 auto;
-}
 
-.custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
-  margin: 10px 30px;
-  color: #ffffff;
-  text-align: center;
-  position: relative;
-}
-
-.custom_nav-container.navbar-expand-lg .navbar-nav .nav-link::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -2px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 7px;
-  height: 7px;
-  border-radius: 100%;
-  background-color: #ffffff;
-}
 
 a,
 a:hover,
@@ -128,61 +107,6 @@ a:focus {
   color: initial;
 }
 
-.btn,
-.btn:focus {
-  outline: none !important;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.user_option {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.custom_nav-container .nav_search-btn {
-  background-image: url(../images/search-icon.png);
-  background-size: 22px;
-  background-repeat: no-repeat;
-  background-position-y: 7px;
-  width: 35px;
-  height: 35px;
-  padding: 0;
-  border: none;
-}
-
-.navbar-brand {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.navbar-brand span {
-  font-size: 24px;
-  color: #ffffff;
-}
-
-.custom_nav-container {
-  z-index: 99999;
-  padding: 15px 0;
-}
-
-.custom_nav-container .navbar-toggler {
-  outline: none;
-}
-
-.custom_nav-container .navbar-toggler .navbar-toggler-icon {
-  background-image: url(../images/menu.png);
-  background-size: 55px;
-}
 
 /*end header section*/
 .slider_section {
@@ -218,7 +142,7 @@ a:focus {
   display: inline-block;
   padding: 10px 55px;
   background-color: #ffffff;
-  border: 1px solid #ffffff;
+  border: 1px solid orange;
   color: #000000;
   border-radius: 20px 20px 0 20px;
   margin-top: 35px;
@@ -226,7 +150,7 @@ a:focus {
 
 .slider_section .detail-box a:hover {
   background-color: transparent;
-  color: #ffffff;
+  color: orange;
 }
 
 .slider_section #carouselExampleIndicators {
@@ -293,7 +217,7 @@ a:focus {
 }
 
 .do_section .do_container .box:hover .img-box {
-  background-color: #fec016;
+  background-color: orange;
 }
 
 .do_section .do_container .arrow_bg::before {
@@ -349,39 +273,11 @@ a:focus {
 
 .who_section .detail-box a:hover {
   background-color: transparent;
-  color: #353434;
+  color: orange;
+  border-color: orange;
 }
 
-.work_section .work_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0 -1%;
-}
 
-.work_section .work_container .box {
-  min-width: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-}
-
-.work_section .work_container .box img {
-  width: 100%;
-}
-
-.work_section .work_container .box.b-2, .work_section .work_container .box.b-3 {
-  width: 43.5%;
-}
-
-.work_section .work_container .box.b-1, .work_section .work_container .box.b-4 {
-  width: 56.5%;
-}
 
 .client_section {
   padding-bottom: 150px;
@@ -526,70 +422,7 @@ a:focus {
   font-weight: 500;
 }
 
-/* contact section */
-.contact_section .heading_container {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 
-.contact_section .contact-form {
-  padding: 25px;
-  border-radius: 20px;
-}
-
-.contact_section .contact-form input {
-  border: none;
-  outline: none;
-  background-color: transparent;
-  width: 100%;
-  margin: 15px 0;
-  padding: 10px 20px;
-  border: 1px solid rgba(0, 0, 0, 0.4);
-  border-radius: 30px;
-}
-
-.contact_section .contact-form input.input_message {
-  height: 175px;
-}
-
-.contact_section .contact-form input::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.4);
-}
-
-.contact_section .contact-form input:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.4);
-}
-
-.contact_section .contact-form input::-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.4);
-}
-
-.contact_section .contact-form input::placeholder {
-  color: rgba(0, 0, 0, 0.4);
-}
-
-.contact_section .contact-form button {
-  border: none;
-  outline: none;
-  padding: 12px 50px;
-  text-transform: uppercase;
-  margin-top: 25px;
-  background-color: #fec913;
-  color: #fff;
-  border-radius: 30px;
-}
-
-.contact_section .map_img-box {
-  width: 80%;
-  margin: 25px auto 0 auto;
-}
-
-.contact_section .map_img-box img {
-  width: 100%;
-}
-
-/* end contact section */
 .info_section {
   background-color: #232323;
   color: #ffffff;
@@ -710,5 +543,196 @@ a:focus {
   color: #fbfcfd;
 }
 
-/* end footer section*/
-/*# sourceMappingURL=style.css.map */
+
+
+body {
+  
+  text-rendering: optimizeLegibility;
+}
+
+a.btn {
+  background: #0096a0;
+  border-radius: 4px;
+	box-shadow: 0 2px 0px 0 rgba(0,0,0,0.25);
+  color: #ffffff;
+  display: inline-block;
+  padding: 6px 30px 8px;
+  position: relative;
+  text-decoration: none;
+	transition: all 0.1s 0s ease-out;
+}
+
+.no-touch a.btn:hover {
+  background: lighten(#0096a0,2.5);
+  box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
+  transform: translateY(-2px);
+  transition: all 0.25s 0s ease-out;
+}
+
+.no-touch a.btn:active,
+a.btn:active {
+  background: darken(#0096a0,2.5);
+  box-shadow: 0 1px 0px 0 rgba(255,255,255,0.25);
+  transform: translate3d(0,1px,0);
+  transition: all 0.025s 0s ease-out;
+}
+
+div.cards {
+  margin: 80px auto;
+  max-width: 960px;
+  text-align: center;
+}
+
+div.card {
+  background: #ffffff;
+  display: inline-block;
+  margin: 8px;
+  max-width: 300px;
+  perspective: 1000;
+  position: relative;
+  text-align: left;
+  transition: all 0.3s 0s ease-in;
+  width: 300px;
+  z-index: 1;
+
+  img {
+    max-width: 300px;
+  }
+  
+  .card__image-holder {
+    background: rgba(0,0,0,0.1);
+    height: 0;
+    padding-bottom: 75%;
+  }
+
+  div.card-title {
+    background: #ffffff;
+    padding: 6px 15px 10px;
+    position: relative;
+    z-index: 0;
+    
+    a.toggle-info {
+      border-radius: 32px;
+      height: 32px;
+      padding: 0;
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      width: 32px;
+      
+      span {
+        background: #ffffff;
+        display: block;
+        height: 2px;
+        position: absolute;
+        top: 16px;
+        transition: all 0.15s 0s ease-out;
+        width: 12px;
+      }
+      
+      span.left {
+        right: 14px;
+        transform: rotate(45deg);
+      }
+      span.right {
+        left: 14px;
+        transform: rotate(-45deg);
+      }
+    }
+    
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.05em;
+      margin: 0;
+      padding: 0;
+      
+      small {
+        display: block;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: -0.025em;
+      }
+    }
+  }
+
+  div.card-description {
+    padding: 0 15px 10px;
+    position: relative;
+    font-size: 14px;
+  }
+
+  div.card-actions {
+  	box-shadow: 0 2px 0px 0 rgba(0,0,0,0.075);
+    padding: 10px 15px 20px;
+    text-align: center;
+  }
+  
+  div.card-flap {
+    background: darken(#ffffff,15);
+    position: absolute;
+    width: 100%;
+    transform-origin: top;
+    transform: rotateX(-90deg);
+  }
+  div.flap1 {
+    transition: all 0.3s 0.3s ease-out;
+    z-index: -1;
+  }
+  div.flap2 {
+    transition: all 0.3s 0s ease-out;
+    z-index: -2;
+  }
+  
+}
+
+div.cards.showing {
+  div.card {
+    cursor: pointer;
+    opacity: 0.6;
+    transform: scale(0.88);
+  }
+}
+
+.no-touch  div.cards.showing {
+  div.card:hover {
+    opacity: 0.94;
+    transform: scale(0.92);
+  }
+}
+
+div.card.show {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+
+  div.card-title {
+    a.toggle-info {
+      background: #ff6666 !important;
+      span {
+        top: 15px;
+      }
+      span.left {
+        right: 10px;
+      }
+      span.right {
+        left: 10px;
+      }
+    }
+  }
+  div.card-flap {
+    background: #ffffff;
+    transform: rotateX(0deg);
+  }
+  div.flap1 {
+    transition: all 0.3s 0s ease-out;
+  }
+  div.flap2 {
+    transition: all 0.3s 0.2s ease-out;
+  }
+}
+
+
+
+
+/* Header and footer css */
+

@@ -1,11 +1,14 @@
 @media (max-width: 1120px) {
     .hero_area {
+        
         height: auto;
     }
 
     .slider_section {
-        padding: 50px 0;
+      
+        padding: 120px 0;
     }
+    
 
 }
 
