@@ -1,0 +1,61 @@
+@media (max-width: 991px) {
+  header {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0px 5%;
+  }
+
+  header .btn {
+    display: block;
+    color: white;
+  }
+
+  header .navbar {
+    position: fixed;
+    flex-direction: column;
+    min-width: 300px;
+    height: 100vh;
+    background: black;
+    top: 0;
+    right: -100%;
+    transition: all 0.9s;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 10rem;
+  }
+
+  header .navbar.active2 {
+    right: 0;
+    transition: 0.9s;
+  }
+
+  header .navbar .close-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px;
+    color: white;
+  }
+
+  header .navbar a {
+    display: block;
+    font-size: 1.3rem;
+    margin: 15px 15px;
+    padding: 0.5rem 15px;
+  }
+
+  header .navbar a:hover {
+    background: #21293a;
+    color: #fff;
+  }
+
+  header .logo {
+    font-size: 25px;
+    font-weight: 500;
+  }
+}
+

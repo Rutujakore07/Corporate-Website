@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Services */
+.div1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card{
+    margin-block: 2.5em;
+    margin-inline: 1em;
+    width: 28rem;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+    
+    .card-img-top{
+        transform: scale(1.1);
+        box-shadow: 0.3em 0.3em 0.3em  rgb(187, 187, 187);
+        
+    }
+
+    .card-title{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2em;
+        transform: translateY(0.3em);
+    }
+    
+    .postcard__bar{
+        width: 10em;
+        background-color: orangered;
+        transform: translateY(0.3em);
+    }
+
+    .card-text{
+        transform: translateY(0.3em);
+    }
+      
+}
+
+.card-img-top {
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    position: relative;
+    height: 20em;
+  }
+
+.card-title{
+    text-align: center;
+    transition: transform 0.5s ease;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-title::first-letter{
+    color: orangered;
+    font-size: 1.5em;
+    transition: transform 0.5s ease;
+}
+
+.postcard__bar {
+    width: 6em;
+    height: 0.3em;
+    margin: 1em 0;
+    border-radius: 0.5em;
+    margin: auto;
+    background-color: #424242;
+    transition: width 0.4s ease;
+}
+
+.card-text{
+    text-align: justify;
+}
+
+
+/* Media Query */
+@media screen and (max-width: 1410px) {
+    .card{
+        width: 37rem;
+    }  
+}
+@media screen and (max-width: 1250px) {
+    .card{
+        width: 33rem;
+    }
+}
+@media screen and (max-width: 1120px) {
+    .card{
+        width: 30rem;
+    }
+}
+@media screen and (max-width: 1025px) {
+    .card{
+        width: 25rem;
+    }
+}
+@media screen and (max-width: 865px) { 
+    .card{
+        width: 20rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .card{
+        width: 40rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    .card{
+        width: 25rem;
+    }
+}
