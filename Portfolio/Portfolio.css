@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* padding-top: 56px; */
+    background-color: #f8f9fa;
+    font-family: 'Times New Roman', Times, serif;
+}
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.card img {
+    max-width: 455px;
+    margin-bottom: 10px;
+}
+.services .card-body {
+    padding-top: 56px;
+    
+    text-align: center;
+}
+.image-card {
+    margin-bottom: 30px;
+    height: 400px; 
+}
+.image-card img {
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+}
+.image-card .card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%; 
+}
+.card-body img{
+
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+} 
+.marquee-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 60px; 
+    background-color: #fff;
+}
+.marquee {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: scroll 10s linear infinite;
+}
+.marquee img {
+    height: 50px; 
+    margin-right: 20px;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.counter {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.count {
+    color: #ff7f2a;
+    font-size: 3em;
+    margin: 0;
+    animation: countUp 2s ease-in-out;
+}
+
+p {
+    color: #666;
+    font-size: 1.2em;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes countUp {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
