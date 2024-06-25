@@ -234,6 +234,11 @@ body {
       width: 100%;
       max-width: 100%;
   }
+  .advertisement iframe{
+      width: 100%;
+      max-width: 100%;
+}
+
 }
 
 @media (min-width: 768px) {
